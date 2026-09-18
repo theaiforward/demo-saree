@@ -212,21 +212,21 @@ function App() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="flex justify-center gap-8 text-[#EAE6DF]/50"
+            className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 text-[#EAE6DF]/50"
           >
             <div className="flex flex-col items-center gap-2">
-              <span className="text-4xl font-light text-[#D4AF37]">24k</span>
-              <span className="text-[10px] uppercase tracking-[0.2em]">Gold Zari</span>
+              <span className="text-3xl md:text-4xl font-light text-[#D4AF37]">24k</span>
+              <span className="text-[10px] uppercase tracking-[0.2em] text-center">Gold Zari</span>
             </div>
-            <div className="w-px h-12 bg-white/10" />
+            <div className="hidden md:block w-px h-12 bg-white/10" />
             <div className="flex flex-col items-center gap-2">
-              <span className="text-4xl font-light text-[#D4AF37]">600+</span>
-              <span className="text-[10px] uppercase tracking-[0.2em]">Hours per Saree</span>
+              <span className="text-3xl md:text-4xl font-light text-[#D4AF37]">600+</span>
+              <span className="text-[10px] uppercase tracking-[0.2em] text-center">Hours per Saree</span>
             </div>
-            <div className="w-px h-12 bg-white/10" />
+            <div className="hidden md:block w-px h-12 bg-white/10" />
             <div className="flex flex-col items-center gap-2">
-              <span className="text-4xl font-light text-[#D4AF37]">3rd</span>
-              <span className="text-[10px] uppercase tracking-[0.2em]">Gen Weavers</span>
+              <span className="text-3xl md:text-4xl font-light text-[#D4AF37]">3rd</span>
+              <span className="text-[10px] uppercase tracking-[0.2em] text-center">Gen Weavers</span>
             </div>
           </motion.div>
         </div>
@@ -275,7 +275,7 @@ function App() {
               </p>
               
               <div className="pt-8">
-                <button onClick={() => alert(`Thank you for your interest in ${saree.name}. Our master concierge has been notified and will contact you privately to arrange a viewing.`)} className="px-10 py-4 text-[#D4AF37] border-b border-[#D4AF37]/30 hover:border-[#D4AF37] hover:tracking-[0.2em] transition-all duration-500 uppercase text-xs tracking-[0.1em] flex items-center gap-4 group cursor-pointer">
+                <button onClick={() => alert(`Thank you for your interest in ${saree.name}. Our master concierge has been notified and will contact you privately to arrange a viewing.`)} className="px-6 md:px-10 py-4 text-[#D4AF37] border-b border-[#D4AF37]/30 hover:border-[#D4AF37] hover:tracking-[0.2em] transition-all duration-500 uppercase text-xs tracking-[0.1em] flex items-center gap-4 group cursor-pointer">
                   Acquire Masterpiece
                   <div className="w-8 h-px bg-[#D4AF37] transform origin-left group-hover:scale-x-150 transition-transform duration-500"></div>
                 </button>
